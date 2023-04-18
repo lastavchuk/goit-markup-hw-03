@@ -40,11 +40,8 @@ ul {
 
 .container {
     width: 1158px;
-    /* margin: 0 auto; */
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: calc(var(--card-set-gap) / 2);
-    padding-right: calc(var(--card-set-gap) / 2);
+    margin: 0 auto;
+    padding: 0 15px;
     /* padding-left: 12px;
     padding-right: 12px; */
     /* outline: 1px solid tomato; */
@@ -77,10 +74,6 @@ ul {
 }
 .logo-white {
     color: var(--light-color);
-}
-.footer-logo {
-    display: inline-block;
-    margin-bottom: 18px;
 }
 
 /* Header */
@@ -255,6 +248,13 @@ ul {
 }
 
 /* Portfolio */
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+.portfolio img {
+    display: block;
+}
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -334,12 +334,12 @@ ul {
 .button-secondary:focus {
     background: var(--pressed-state-color);
     color: var(--white-color);
+    border: 1px solid transparent;
 }
 
 .filter-button {
     display: flex;
     justify-content: center;
-    padding-top: 96px;
     padding-bottom: 72px;
 }
 .button-list:not(:last-child) {
@@ -357,4 +357,8 @@ ul {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--light-color);
+}
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
